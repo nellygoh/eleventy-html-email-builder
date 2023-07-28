@@ -1,0 +1,48 @@
+@import '../config';
+@import '../../base/mixins/mixins';
+
+@media (max-width: 480px){
+    .mobile-hide{
+        display: none !important;
+    }
+    .mobile-break{
+        display: block !important;
+    }
+    .mb-padding {
+        padding: 0 20px !important;
+    }
+    .col{
+        width: 100% !important;
+        max-width: 480px !important;
+    }
+    .top-ct {
+        display: block !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        .col {
+            text-align: center !important;
+        }
+    }
+    .btm-ct {
+        .col {
+            margin-top: 10px !important;
+            margin-bottom: 20px !important;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    @include btn-mobile-center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .wrapper-bg {
+        background-color: #ECEFF1 !important;
+    }
+}
+
+[data-ogsc] {
+    .wrapper-bg {
+        background-color: #ECEFF1 !important;
+    }
+}

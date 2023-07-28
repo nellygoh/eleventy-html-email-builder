@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+
+.outer-wrapper {
+    max-width: 640px;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    overflow-x: inherit !important;
+}
+
+.inner-wrapper{
+    width: 100%;
+    max-width: 640px;
+    overflow-x: inherit !important;
+    overflow: hidden !important
+}
+
+
+.col{
+    display: inline-block;
+    overflow: hidden !important;
+    overflow-x: inherit !important;
+    width: 100%;
+}
+
+.mbg {
+    background-color: $body-bg-color;
+}

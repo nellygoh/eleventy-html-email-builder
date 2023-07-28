@@ -1,0 +1,59 @@
+@import 'config';
+@import '../base/mixins/mixins';
+@import '../base/global';
+@import '../base/layout/layout';
+@import '../base/block/header';
+@import '../base/block/footer';
+@import '../base/components/spacer';
+@import '../base/components/button';
+
+@include img-max-width($img-no: 0, $max-width: 640);
+@include img-max-width($img-no: 1, $max-width: 260);
+@include img-max-width($img-no: 2, $max-width: 160);
+
+.content-bg {
+    background-color: $content-wrapper-bg;
+}
+
+.col {
+    display: inline-block;
+    overflow: hidden !important;
+    overflow-x: inherit !important;
+    width: 100%;
+    vertical-align: top;
+    
+}
+
+.top-ct {
+    .col {
+        &.lt {
+            max-width: 260px;
+        }
+        &.mt {
+            max-width: 20px;
+        }
+        &.rt {
+            max-width: 270px;
+        }
+    }
+}
+
+.btm-ct {
+    text-align: center;
+    .col {
+        &.ct {
+            max-width: 160px;
+        }
+        &.mt {
+            max-width: 30px;
+        }
+    }
+}
+.txt-right {
+    text-align: right;
+}
+
+.md-ct {
+    text-align: center;
+    background-color: darken($content-wrapper-bg, 5%);
+}

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+background_color: CFD8DC
+permalink: "{{ page.filePathStem }}.html"
+stylesheet: css/demo/main.css
+media_query_stylesheet: css/demo/media/style.css
+title: "Email HTML Demo"
+ariaLabel: "Demo Email"
+---
+{{> partials/components/preheader }}
+
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CFD8DC" role="presentation">
+    <tr>
+        <td>
+            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CFD8DC" role="presentation">
+                <tr>
+                    <td>
+<![endif]-->
+<center class="container">
+    <table class="mbg" role="presentation">
+        <tr>
+            <td class="mbg">
+                <div class="outer-wrapper">
+                <!--[if (gte mso 9)|(IE)]>
+                    <table width="640" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                        <tr>
+                            <td align="center">
+                <![endif]-->
+                    <table class="inner-wrapper" align="center" role="presentation">
+                        <!-- HEADER -->
+                        {{> partials/block/header}}
+                        <!-- BODY CONTENT -->
+                        {{> content/demo/demo_content}}
+                        <!-- FOOTER -->
+                        {{> partials/block/footer}}
+                    </table>
+                <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                        </tr>
+                    </table>
+                <![endif]-->
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+<!--[if (gte mso 9)|(IE)]>
+        </td>
+    </tr>
+</table>
+<![endif]-->

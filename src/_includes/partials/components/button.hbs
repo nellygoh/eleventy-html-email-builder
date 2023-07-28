@@ -1,0 +1,23 @@
+{{#with (indexOf cta index)}}
+{{#if ../center_on_mobile}}
+<tr class="btn-mb-center">
+{{else}}
+<tr>
+{{/if}}
+    <td align="{{#if ../align}}{{ ../align }}{{else}}{{ this.align }}{{/if}}">
+        <table class="btn btn-{{ this.color }}" cellpadding="0" cellspacing="0" align="{{#if ../align}}{{ ../align }}{{else}}{{ this.align }}{{/if}}" role="presentation">
+            <tr>
+                <td align="{{#if ../align}}{{ ../align }}{{else}}{{ this.align }}{{/if}}">
+                    <table role="presentation">
+                        <tr>
+                            <td>
+                                <a class="btn-link" target="_blank" href="{{{ this.url }}}">{{{ this.text }}}</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+{{/with}}

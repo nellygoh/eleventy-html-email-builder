@@ -1,0 +1,12 @@
+//*--------------------------------------------------------*/
+// Footer
+//*--------------------------------------------------------*/
+.co-info {
+    color: $footer-color;
+    font-size: $footer-font-size;
+    line-height: 1.5;
+    .co-nm {
+        font-family: $sec-font;
+        line-height: 2;
+    }
+}

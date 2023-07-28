@@ -1,0 +1,39 @@
+//*--------------------------------------------------------*/
+// Font Family
+//*--------------------------------------------------------*/
+$main-font : "Source Sans 3", Arial, Verdana, sans-serif;
+$sec-font: "Oswald", Impact, "Franklin Gothic Bold", sans-serif;
+
+
+//*--------------------------------------------------------*/
+// Default Styles
+//*--------------------------------------------------------*/
+
+$body-bg-color : #ddeaf0;
+$body-font-family: $main-font;
+$body-font-size: 16px;
+$body-line-height: 1.5;
+$font-color: #263238;
+$heading-color: #374850;
+$heading-line-height: 1.2;
+$h1-size: 24px;
+$h2-size: 18px;
+$link-color: #455A64;
+$footer-font-size: 13px;
+$footer-color: #4a585e;
+$footer-link-color: #455A64;
+$content-wrapper-bg: #d7e4e8;
+
+//*--------------------------------------------------------*/
+// Buttons
+//*--------------------------------------------------------*/
+$colors-class-names : "light-blue","blue";
+$colors-class-values: #90A4AE, #455A64;
+
+$btn-box-shadow     : 1px 1px 1px 0 rgba(38,50,56,0.65);
+$btn-br             : 50000px; // Border radius
+$btn-font-size      : 17px;
+$btn-font-weight    : 700;
+
+$btn-max-width      : 350px;
+$btn-padding        : 10px 30px 8px;

@@ -1,0 +1,16 @@
+<table role="presentation">
+    <tr>
+        <td>
+            <h1>{{ heading }}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas blandit metus, ac
+                dapibus orci lacinia rutrum. Nulla facilisi. Etiam ultrices risus purus, eget cursus nisi
+                condimentum non. Maecenas rutrum.</p>
+        </td>
+    </tr>
+    {{> partials/components/spacer height=20}}
+    {{#if btnAlign}}
+        {{> partials/components/button index=0 align=btnAlign center_on_mobile=true}}
+    {{else}}
+        {{> partials/components/button index=0 center_on_mobile=true }}
+    {{/if}}
+</table>

@@ -1,0 +1,61 @@
+//*--------------------------------------------------------*/
+// Buttons
+//*--------------------------------------------------------*/
+
+@for $i from 1 through length($colors-class-names){
+  $current-class: nth($colors-class-names, $i);
+  .btn-#{$current-class} {
+    width: 100%;
+    max-width: $btn-max-width;
+    tr > td > table {
+      width: auto !important;
+      td{
+        padding: $btn-padding;
+        border-radius: $btn-br;
+        text-align: center;
+        box-shadow: $btn-box-shadow;
+        vertical-align: middle;
+        background-color: nth($colors-class-values, $i);
+        a{
+          border-radius: $btn-br;
+          display: inline-block;
+          font-size: $btn-font-size;
+          font-weight: $btn-font-weight;
+          margin: 0;
+          text-decoration: none;
+          background-color: nth($colors-class-values, $i);
+          @if ($current-class=="light-blue") {
+            color: #263238;
+          } @else {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .btn-hollow-#{$current-class} {
+    width: 100%;
+    max-width: $btn-max-width;
+
+    tr>td>table {
+      width: auto !important;
+
+      td {
+        border-radius: $btn-br;
+        text-align: center;
+        vertical-align: middle;
+        a {
+          color: nth($colors-class-values, $i);
+          border-radius: $btn-br;
+          border: 1px solid lighten(nth($colors-class-values, $i), 20%);
+          padding: $btn-padding;
+          display: inline-block;
+          font-size: $btn-font-size;
+          font-weight: $btn-font-weight;
+          margin: 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

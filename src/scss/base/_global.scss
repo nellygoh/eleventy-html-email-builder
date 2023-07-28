@@ -1,0 +1,124 @@
+//*--------------------------------------------------------*/
+// Global Styles
+//*--------------------------------------------------------*/
+
+html{
+    background-color: $body-bg-color;
+  -webkit-text-size-adjust: 100%;
+}
+
+body, p{
+  color: $font-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  width: 100% !important;
+  height: 100% !important;
+  background-color: $body-bg-color;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+%textBase{
+  color: $font-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+}
+
+input, select, option, textarea{
+  @extend %textBase;
+  padding: 5px 10px;
+  line-height: $body-line-height;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  td, a, img {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: $font-color;
+  }
+  a{
+    color: $link-color;
+  }
+}
+
+a{
+  text-decoration: underline;
+  color: $link-color;
+}
+
+h1,h2,h3,h4, h5 {
+  font-family: $sec-font;
+  line-height: $heading-line-height;
+  color: $heading-color;
+  margin: 0;
+  padding: 0;
+  mso-line-height-rule:exactly;
+  -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: $h1-size;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: $h2-size;
+  margin-bottom: 5px;
+}
+
+p{
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: $font-color; 
+  mso-line-height-rule:exactly;
+  -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+sup{
+  font-size: .6em;
+  display: inline-block;
+}
+
+// External class fix for Outlook.com
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+.img{
+  display: block;
+  width: 100%;
+}
+.coupon-code {
+  font-weight: 700;
+}
+.u-link {
+  text-decoration: underline;
+}

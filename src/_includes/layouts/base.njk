@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <!--<![endif]-->
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+        <title>{%- if title -%}{{ title|safe }}{%- endif -%}</title>
+        <style type="text/css" data-embed>
+		    @font-face {font-family: 'Oswald';font-style: normal;font-weight: 500;src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUZiZQ.woff2) format('woff2');}
+		    @font-face {font-family: 'Source Sans 3';font-style: normal;font-weight: 400;src: url(https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2) format('woff2');}
+		    @font-face {font-family: 'Source Sans 3';font-style: normal;font-weight: 700;src: url(https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2) format('woff2');}
+            :root { color-scheme: light dark;supported-color-schemes: light dark; }
+            html, body { margin:0;padding:0px;-webkit-text-size-adjust:none;background-color:#{{ background_color }};}
+            div[style*="margin:16px 0"]{margin:0!important}
+            a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+            u+#body a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit}
+            #MessageViewBody a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit}
+            {% if media_query_stylesheet %}
+            {%- set mediaCss %}{% include media_query_stylesheet %}{% endset %}
+            {{ mediaCss | cssmin | safe }}
+            {% endif %}
+        </style>
+        {%- set mainCss %}{% include stylesheet %}{% endset %}
+        <style>{{ mainCss | safe }}</style>
+        <!--[if gte mso 9]>
+        <xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings>
+        </xml><![endif]-->
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table { border-collapse: collapse; }
+            body, table tr, table td, a, span, h1, h2, h3, h4, p, ul, li, table.MsoNormalTable { font-family: Arial, verdana, sans-serif !important; }
+        </style>
+        <![endif]-->
+        <!--[if gt mso 15]>
+        <style type="text/css" media="all">
+                table, tr, td {border-collapse: collapse;}
+                tr,td { font-size:0px; line-height:0px; border-collapse: collapse; mso-line-height-rule: exactly; }
+            a{ text-decoration: none; }
+        </style>
+        <![endif]-->
+    </head>
+    <body class="body">
+        <div role="article" aria-roledescription="email" aria-label="{%- if ariaLabel -%}{{ ariaLabel|safe }}{%- endif -%}" xml:lang="en" lang="en">
+            {{content | safe}}
+        </div>
+    </body>
+</html>

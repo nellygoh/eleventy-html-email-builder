@@ -1,0 +1,21 @@
+{{#with (indexOf images index)}}
+    <tr>
+        <td align="{{{this.align}}}">
+            {{#if (isSmallImage this.width)}}
+            <!--[if (gte mso 9)|(IE)]>
+                <table width="{{{width}}}" role="presentation">
+                    <tr>
+                        <td align="center">
+                <![endif]-->
+            {{/if}}
+                <img src="{{{ this.url}}}" width="{{{ this.width }}}" alt="{{{ this.alt }}}" class="img img{{../index}}">
+            {{#if (isSmallImage this.width)}}
+                <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                </tr>
+            </table>
+            <![endif]-->
+            {{/if}}
+        </td>
+    </tr>
+{{/with}}

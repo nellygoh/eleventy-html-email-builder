@@ -1,0 +1,38 @@
+{
+  "preheader": "Some preheader content here.",
+  "logo": {
+    "url": "https://logoipsum.com/artwork/221",
+    "width": "110",
+    "alt": "Logo Ipsum"
+  },
+  "images": [{
+    "url": "https://placehold.co/640x300/B0BEC5/78909C/png?font=oswald&text=BANNER",
+    "width": "640",
+    "alt": "Main banner",
+    "align": "center"
+  },
+  {
+    "url": "https://placehold.co/260x260/B0BEC5/78909C.png?font=oswald&text=IMAGE",
+    "width": "260",
+    "alt": "Image",
+    "align": "center"
+  },
+  {
+    "url": "https://placehold.co/160x160/B0BEC5/78909C.png?font=oswald&text=SMALL+IMAGE",
+    "width": "160",
+    "alt": "Small image",
+    "align": "center"
+  }],
+  "cta": [{
+    "text": "VIEW MORE",
+    "color": "blue",
+    "align": "left",
+    "url": "#"
+  },
+  {
+    "text": "LEARN MORE",
+    "color": "light-blue",
+    "align": "center",
+    "url": "#"
+  }]
+}

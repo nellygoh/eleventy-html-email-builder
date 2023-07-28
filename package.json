@@ -1,0 +1,41 @@
+{
+  "name": "eleventy-html-email-builder",
+  "version": "1.0.0",
+  "description": "HTML Email builder system with Eleventy",
+  "scripts": {
+    "build:sass": "dotenv -- sass src/scss/$PROJECT:src/_includes/css/$PROJECT",
+    "build:eleventy": "npx @11ty/eleventy",
+    "watch:eleventy": "npx @11ty/eleventy --serve --incremental",
+    "watch:sass": "dotenv -- sass --watch src/scss/$PROJECT:src/_includes/css/$PROJECT",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:* --parallel",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nellygoh/eleventy-html-email-builder.git"
+  },
+  "author": "Nelly Goh",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-directory-output": "^1.0.1",
+    "autoprefixer": "^10.4.13",
+    "clean-css": "^5.3.1",
+    "cross-var": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^6.0.0",
+    "eleventy-load": "^0.3.1",
+    "eslint": "^8.25.0",
+    "handlebars": "^4.7.7",
+    "handlebars-helpers": "^0.9.8",
+    "html-minifier": "^4.0.0",
+    "juice": "^8.1.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.61.0"
+  },
+  "volta": {
+    "node": "16.17.1",
+    "npm": "8.19.2"
+  }
+}

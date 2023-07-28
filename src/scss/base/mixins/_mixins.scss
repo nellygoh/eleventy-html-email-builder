@@ -1,0 +1,31 @@
+//*--------------------------------------------------------*/
+// Image
+//*--------------------------------------------------------*/
+@mixin img-max-width($img-no, $max-width){
+  .img.img#{$img-no}{
+    max-width: #{$max-width}px;
+  }
+}
+
+@mixin mobile-img($img-no, $max-width, $align){
+  .img.img#{$img-no}{
+    max-width: #{$max-width}px !important;
+    @if ($align == "center"){
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+
+//*--------------------------------------------------------*/
+// Button Center on Mobile
+//*--------------------------------------------------------*/
+@mixin btn-mobile-center {
+  .btn-mb-center {
+    text-align: center !important;
+    >td {
+      display: inline-block !important;
+    }
+  }
+}
